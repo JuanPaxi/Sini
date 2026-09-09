@@ -4,9 +4,15 @@ minSdk = "28"
 targetSdk = "36"
 activityCompose = "1.13.0"
 agp = "9.2.1"
+coil3 = "3.5.0"
 composeBom = "2026.06.01"
 coreKtx = "1.19.0"
+hilt = "2.60.1"
 kotlin = "2.4.10"
+ksp = "2.3.9"
+okhttp3 = "5.4.0"
+retrofit2 = "3.0.0"
+retrofitKotlinxSerializationJson = "1.11.0"
 spotless = "8.9.0"
 
 
@@ -16,11 +22,26 @@ androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", versi
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil3" }
+coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil3" }
+coil-svg = { group = "io.coil-kt.coil3", name = "coil-svg", version.ref = "coil3" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "retrofitKotlinxSerializationJson" }
+squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+squareup-okhttp3-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+squareup-retrofit2-converter-kotlinx-serialization = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit2" }
+squareup-retrofit2-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit2" }
 
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt-android-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 
 
@@ -28,4 +49,16 @@ spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 compose-ui = [
     "androidx-compose-material3",
     "androidx-compose-ui",
+]
+network = [
+    "kotlinx-serialization-json",
+    "squareup-okhttp3",
+    "squareup-okhttp3-logging",
+    "squareup-retrofit2-converter-kotlinx-serialization",
+    "squareup-retrofit2-core",
+]
+coil = [
+    "coil-compose",
+    "coil-network-okhttp",
+    "coil-svg",
 ]
