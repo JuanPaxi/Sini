@@ -24,3 +24,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sini"
 include(":app")
+include(":core:network")
+include(":core:common")
+include(":core:model")
