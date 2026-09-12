@@ -8,7 +8,9 @@ coil3 = "3.5.0"
 composeBom = "2026.06.01"
 coreKtx = "1.19.0"
 hilt = "2.60.1"
+junit = "4.13.2"
 kotlin = "2.4.10"
+kotlinxCoroutines = "1.11.0"
 ksp = "2.3.9"
 okhttp3 = "5.4.0"
 retrofit2 = "3.0.0"
@@ -26,6 +28,8 @@ coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref 
 coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil3" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "retrofitKotlinxSerializationJson" }
 squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
 squareup-okhttp3-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }

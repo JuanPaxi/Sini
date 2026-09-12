@@ -41,6 +41,7 @@ android {
             dimension = "contentType"
         }
     }
+    testOptions.unitTests.isIncludeAndroidResources = true
     lint {
         xmlReport = true
         sarifReport = true
@@ -73,6 +74,9 @@ dependencies {
     implementation(libs.bundles.network)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+
+    testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
 
 val apiKey =
