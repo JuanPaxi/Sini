@@ -1,0 +1,24 @@
+{
+  "backdrop_path": "/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
+  "genres": [
+    {
+      "id": 35,
+      "name": "Comedy"
+    },
+    {
+      "id": 12,
+      "name": "Adventure"
+    },
+    {
+      "id": 10751,
+      "name": "Family"
+    }
+  ],
+  "id": 1204680,
+  "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+  "poster_path": "/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
+  "release_date": "2026-08-20",
+  "runtime": 103,
+  "title": "Coyote vs. Acme",
+  "vote_average": 7.575
+}
