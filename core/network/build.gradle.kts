@@ -25,7 +25,6 @@ android {
             libs.versions.minSdk
                 .get()
                 .toInt()
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
     compileOptions {
@@ -42,11 +41,6 @@ android {
         }
     }
     testOptions.unitTests.isIncludeAndroidResources = true
-    lint {
-        xmlReport = true
-        sarifReport = true
-        checkDependencies = true
-    }
     buildFeatures {
         buildConfig = true
     }
@@ -56,14 +50,10 @@ spotless {
     kotlin {
         target("src/**/*.kt")
         ktlint()
-        trimTrailingWhitespace()
-        endWithNewline()
     }
     kotlinGradle {
         target("**/*.gradle.kts")
         ktlint()
-        trimTrailingWhitespace()
-        endWithNewline()
     }
 }
 

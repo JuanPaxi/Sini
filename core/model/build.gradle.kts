@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("java-library")
-    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.kotlin.jvm.library)
     alias(libs.plugins.spotless)
 }
 
@@ -21,13 +21,13 @@ spotless {
     kotlin {
         target("src/**/*.kt")
         ktlint()
-        trimTrailingWhitespace()
-        endWithNewline()
     }
     kotlinGradle {
         target("**/*.gradle.kts")
         ktlint()
-        trimTrailingWhitespace()
-        endWithNewline()
     }
+}
+
+dependencies {
+    implementation(libs.kotlinx.datetime)
 }
