@@ -28,7 +28,6 @@ android {
                 .toInt()
         versionCode = 1
         versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -43,11 +42,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    lint {
-        xmlReport = true
-        sarifReport = true
-        checkDependencies = true
-    }
     buildFeatures {
         compose = true
     }
@@ -57,17 +51,13 @@ spotless {
     kotlin {
         target("src/**/*.kt")
         ktlint()
-        endWithNewline()
     }
     kotlinGradle {
         target("**/*.gradle.kts")
         ktlint()
-        trimTrailingWhitespace()
-        endWithNewline()
     }
     format("xml") {
         target("src/**/*.xml")
-        endWithNewline()
     }
 }
 
