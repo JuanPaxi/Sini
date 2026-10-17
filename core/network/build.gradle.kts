@@ -59,14 +59,17 @@ spotless {
 
 dependencies {
     implementation(project(":core:common"))
-    implementation(project(":core:model"))
     implementation(libs.bundles.coil)
     implementation(libs.bundles.network)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
     testImplementation(libs.junit)
+    testImplementation(libs.google.truth)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.squareup.okhttp3.jvm)
     testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.squareup.okhttp3.mockewebserver3)
 }
 
 val apiKey =

@@ -31,8 +31,6 @@ interface RetrofitSiniNetworkApi {
     ): NetworkMovieDetail
 }
 
-private const val BASE_URL = "https://api.themoviedb.org/3/"
-
 @Serializable
 data class NetworkResponse<T>(
     val page: Int,
@@ -61,12 +59,12 @@ internal class RetrofitSiniNetwork
         override suspend fun getPopularMovies(
             page: Int,
             language: String,
-        ): List<NetworkMovie> =
+        ): NetworkResponse<List<NetworkMovie>> =
             networkApi
                 .getPopularMovies(
                     page = page,
                     language = language,
-                ).results
+                )
 
         override suspend fun getMovieDetail(
             movieId: Int,
@@ -77,4 +75,8 @@ internal class RetrofitSiniNetwork
                     movieId = movieId,
                     language = language,
                 )
+
+        companion object {
+            private const val BASE_URL = "https://api.themoviedb.org/3/"
+        }
     }

@@ -3,8 +3,6 @@ package com.juanpaxi.sini.core.network.interceptor
 import okhttp3.Interceptor
 import okhttp3.Response
 
-private const val TMDB_API_HOST = "api.themoviedb.org"
-
 class SiniHttpRequestInterceptor(
     private val apiKey: String,
 ) : Interceptor {
@@ -28,5 +26,9 @@ class SiniHttpRequestInterceptor(
         }
 
         return chain.proceed(originalRequest)
+    }
+
+    companion object {
+        private const val TMDB_API_HOST = "api.themoviedb.org"
     }
 }
