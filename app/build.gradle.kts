@@ -63,7 +63,6 @@ spotless {
 
 dependencies {
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.core.ktx)
     implementation(libs.bundles.compose.ui)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.hilt.android)
