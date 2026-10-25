@@ -1,5 +1,6 @@
 package com.juanpaxi.sini.core.network.demo
 
+import JvmUnitTestDemoAssetManager
 import com.juanpaxi.sini.core.common.network.Dispatcher
 import com.juanpaxi.sini.core.common.network.SiniDispatchers.IO
 import com.juanpaxi.sini.core.network.SiniNetworkDataSource
@@ -18,7 +19,7 @@ class DemoSiniNetworkDataSource
     constructor(
         @param:Dispatcher(IO) private val ioDispatcher: CoroutineDispatcher,
         private val networkJson: Json,
-        private val assets: DemoAssetManager,
+        private val assets: DemoAssetManager = JvmUnitTestDemoAssetManager,
     ) : SiniNetworkDataSource {
         override suspend fun getPopularMovies(
             page: Int,

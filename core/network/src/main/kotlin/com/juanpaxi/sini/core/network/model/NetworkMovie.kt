@@ -11,6 +11,4 @@ data class NetworkMovie(
     val posterPath: String? = null,
     @SerialName("vote_average")
     val voteAverage: Double,
-    @SerialName("release_date")
-    val releaseDate: String? = null,
 )

@@ -4,6 +4,8 @@ minSdk = "28"
 targetSdk = "36"
 activityCompose = "1.13.0"
 agp = "9.2.1"
+androidxTestCore = "1.7.0"
+androidxTestRunner = "1.7.0"
 coil3 = "3.6.3"
 composeBom = "2026.08.00"
 coreKtx = "1.19.1"
@@ -16,8 +18,10 @@ kotlinxDateTime = "0.8.0"
 ksp = "2.3.9"
 mockitoKotlin = "6.4.0"
 okhttp3 = "5.5.0"
+paging = "3.5.3"
 retrofit2 = "3.0.0"
 retrofitKotlinxSerializationJson = "1.11.0"
+room3 = "3.0.3"
 spotless = "8.9.0"
 
 
@@ -27,6 +31,12 @@ androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", versi
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-paging-testing = { group = "androidx.paging",name = "paging-testing", version.ref = "paging" }
+androidx-room-compiler = { group = "androidx.room3", name = "room3-compiler", version.ref = "room3" }
+androidx-room-runtime = { group = "androidx.room3", name = "room3-runtime", version.ref = "room3" }
+androidx-room-paging = { group = "androidx.room3", name = "room3-paging", version.ref = "room3" }
+androidx-test-core = { group = "androidx.test", name = "core-ktx", version.ref = "androidxTestCore" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil3" }
 coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil3" }
 google-truth = { group = "com.google.truth", name = "truth", version.ref = "googleTruth" }
@@ -48,6 +58,7 @@ squareup-retrofit2-core = { group = "com.squareup.retrofit2", name = "retrofit",
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+androidx-room = { id = "androidx.room3", version.ref = "room3" }
 google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-android-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
