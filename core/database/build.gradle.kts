@@ -47,7 +47,7 @@ room3 {
 
 dependencies {
     implementation(libs.androidx.room.paging)
-    implementation(libs.androidx.room.runtime)
+    api(libs.androidx.room.runtime)
     implementation(libs.kotlinx.datetime)
     implementation(libs.kotlinx.serialization.json)
     ksp(libs.androidx.room.compiler)
