@@ -29,7 +29,7 @@ import com.juanpaxi.sini.core.database.util.UuidConverter
     InstantConverter::class,
     GenreConverter::class,
 )
-internal abstract class SiniDatabase : RoomDatabase() {
+abstract class SiniDatabase : RoomDatabase() {
     abstract fun movieDao(): MovieDao
 
     abstract fun remoteKeyDao(): RemoteKeyDao

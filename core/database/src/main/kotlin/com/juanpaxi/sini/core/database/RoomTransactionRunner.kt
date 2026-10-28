@@ -3,7 +3,7 @@ package com.juanpaxi.sini.core.database
 import androidx.room3.withWriteTransaction
 import javax.inject.Inject
 
-internal class RoomTransactionRunner
+class RoomTransactionRunner
     @Inject
     constructor(
         private val database: SiniDatabase,
