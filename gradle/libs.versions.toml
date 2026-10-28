@@ -8,7 +8,7 @@ androidxTestCore = "1.7.0"
 androidxTestRunner = "1.7.0"
 coil3 = "3.6.3"
 composeBom = "2026.08.00"
-coreKtx = "1.19.1"
+dataStore = "1.2.1"
 googleTruth = "1.4.5"
 hilt = "2.60.1"
 junit = "4.13.2"
@@ -19,6 +19,8 @@ ksp = "2.3.9"
 mockitoKotlin = "6.4.0"
 okhttp3 = "5.5.0"
 paging = "3.5.3"
+protobuf = "4.36.2"
+protobufPlugin = "0.10.0"
 retrofit2 = "3.0.0"
 retrofitKotlinxSerializationJson = "1.11.0"
 room3 = "3.0.3"
@@ -30,7 +32,7 @@ androidx-activity-compose = { group = "androidx.activity", name = "activity-comp
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore", version.ref = "dataStore" }
 androidx-paging-testing = { group = "androidx.paging",name = "paging-testing", version.ref = "paging" }
 androidx-room-compiler = { group = "androidx.room3", name = "room3-compiler", version.ref = "room3" }
 androidx-room-runtime = { group = "androidx.room3", name = "room3-runtime", version.ref = "room3" }
@@ -41,12 +43,15 @@ coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref 
 coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil3" }
 google-truth = { group = "com.google.truth", name = "truth", version.ref = "googleTruth" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
 kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDateTime" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "retrofitKotlinxSerializationJson" }
 mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+protobuf-protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf" }
+protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version.ref = "protobuf" }
 squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
 squareup-okhttp3-jvm = { group = "com.squareup.okhttp3", name = "okhttp-jvm", version.ref = "okhttp3" }
 squareup-okhttp3-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
@@ -64,6 +69,7 @@ hilt-android-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hi
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-jvm-library = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 
 
