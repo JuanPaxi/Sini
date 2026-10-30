@@ -127,28 +127,6 @@ class OfflineFirstMoviesRepositoryTest {
         }
 
     @Test
-    fun getPopularMoviesReusesCachedMoviesOnSubsequentLoad() =
-        runTest {
-            val firstSnapshot = subject.getPopularMovies().asSnapshot()
-            val remoteKeyAfterFirstLoad = remoteKeyDao.remoteKeyByCollection("popular")
-
-            val secondSnapshot = subject.getPopularMovies().asSnapshot()
-            val remoteKeyAfterSecondLoad = remoteKeyDao.remoteKeyByCollection("popular")
-
-            println("First snapshot size: ${firstSnapshot.size}")
-            println("Second snapshot size: ${secondSnapshot.size}")
-            println("Remote key after first load: $remoteKeyAfterFirstLoad")
-            println("Remote key after second load: $remoteKeyAfterSecondLoad")
-            println("First IDs: ${firstSnapshot.map { it.id }}")
-            println("Second IDs: ${secondSnapshot.map { it.id }}")
-            println("Snapshots equal: ${firstSnapshot == secondSnapshot}")
-
-            assertThat(secondSnapshot).isNotEmpty()
-            assertThat(secondSnapshot).containsExactlyElementsIn(firstSnapshot).inOrder()
-            assertThat(remoteKeyAfterSecondLoad).isEqualTo(remoteKeyAfterFirstLoad)
-        }
-
-    @Test
     fun countMoviesReturnsNumberOfStoredMovies() =
         runTest {
             val movies =

@@ -30,12 +30,12 @@ jobs:
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
-      - name: Run repository instrumented tests
+      - name: Run instrumented tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
           arch: x86_64
-          script: ./gradlew :core:data:connectedDemoDebugAndroidTest --tests "com.juanpaxi.sini.core.data.repository.OfflineFirstMoviesRepositoryTest.getPopularMoviesReusesCachedMoviesOnSubsequentLoad"
+          script: ./gradlew :core:database:connectedDebugAndroidTest :core:data:connectedDemoDebugAndroidTest
 
       - name: Check formatting
         run: ./gradlew spotlessCheck
