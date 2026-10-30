@@ -53,8 +53,6 @@ class MovieRemoteMediator
                             ),
                         )
                     }
-
-                    LoadType.PREPEND -> {}
                 }
 
                 MediatorResult.Success(

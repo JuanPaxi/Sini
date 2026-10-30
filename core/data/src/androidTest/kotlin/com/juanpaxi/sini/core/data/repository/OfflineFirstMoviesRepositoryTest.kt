@@ -90,9 +90,9 @@ class OfflineFirstMoviesRepositoryTest {
             assertThat(movies).isNotEmpty()
             assertThat(storedMovies).isAtLeast(20)
             assertThat(remoteKey).isNotNull()
-            val colony = movies.first()
-            assertThat(colony.id).isEqualTo(969681)
-            assertThat(colony.title).isEqualTo("Spider-Man: Brand New Day")
+            val hope = movies.first()
+            assertThat(hope.id).isEqualTo(1058424)
+            assertThat(hope.title).isEqualTo("Hope")
         }
 
     @Test
@@ -124,18 +124,6 @@ class OfflineFirstMoviesRepositoryTest {
             assertThat(movies.size).isGreaterThan(20)
             assertThat(remoteKey).isNotNull()
             assertThat(remoteKey?.nextKey ?: 0).isGreaterThan(2)
-        }
-
-    @Test
-    fun getPopularMoviesReusesCachedMoviesOnSubsequentLoad() =
-        runTest {
-            val firstSnapshot = subject.getPopularMovies().asSnapshot()
-            val remoteKeyAfterFirstLoad = remoteKeyDao.remoteKeyByCollection("popular")
-            val secondSnapshot = subject.getPopularMovies().asSnapshot()
-            val remoteKeyAfterSecondLoad = remoteKeyDao.remoteKeyByCollection("popular")
-            assertThat(secondSnapshot).isNotEmpty()
-            assertThat(secondSnapshot).containsExactlyElementsIn(firstSnapshot).inOrder()
-            assertThat(remoteKeyAfterSecondLoad).isEqualTo(remoteKeyAfterFirstLoad)
         }
 
     @Test

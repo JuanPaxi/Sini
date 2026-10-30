@@ -29,6 +29,15 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
+    flavorDimensions += "contentType"
+    productFlavors {
+        create("demo") {
+            dimension = "contentType"
+        }
+        create("prod") {
+            dimension = "contentType"
+        }
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -62,9 +71,16 @@ spotless {
 }
 
 dependencies {
+    implementation(project(":core:data"))
+    implementation(project(":core:designsystem"))
+    implementation(project(":core:navigation"))
+    implementation(project(":core:model"))
+    implementation(project(":feature:home"))
     implementation(libs.androidx.activity.compose)
-    implementation(libs.bundles.compose.ui)
     implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.bundles.compose.ui)
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.navigation3.ui)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 }

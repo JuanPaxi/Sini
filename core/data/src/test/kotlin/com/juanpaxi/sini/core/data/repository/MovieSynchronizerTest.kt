@@ -58,7 +58,7 @@ class MovieSynchronizerTest {
         runTest {
             val existingMovie =
                 MovieEntity(
-                    localId = Uuid.Companion.random(),
+                    localId = Uuid.random(),
                     tmdbId = 999,
                     position = 0,
                     title = "Old Movie",
@@ -106,6 +106,6 @@ class MovieSynchronizerTest {
     fun syncReturnsTotalPages() =
         runTest {
             val totalPages = subject.sync(1)
-            Truth.assertThat(totalPages).isEqualTo(1001)
+            Truth.assertThat(totalPages).isEqualTo(5)
         }
 }

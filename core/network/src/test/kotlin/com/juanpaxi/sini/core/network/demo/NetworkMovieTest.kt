@@ -13,9 +13,9 @@ class NetworkMovieTest : SiniNetworkTestBase() {
             val response = service.getPopularMovies(1, "en-US")
             assertThat(response.page).isEqualTo(1)
             assertThat(response.results).hasSize(20)
-            assertThat(response.results[0].id).isEqualTo(969681)
+            assertThat(response.results[0].id).isEqualTo(1058424)
             assertThat(response.results[0].title)
-                .isEqualTo("Spider-Man: Brand New Day")
+                .isEqualTo("Hope")
         }
 
     @Test

@@ -1,0 +1,419 @@
+{
+  "page": 5,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 361743,
+      "title": "Top Gun: Maverick",
+      "original_language": "en",
+      "original_title": "Top Gun: Maverick",
+      "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+      "popularity": 57.5861,
+      "poster_path": "/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
+      "release_date": "2022-05-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.158,
+      "vote_count": 11814
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 155,
+      "title": "The Dark Knight",
+      "original_language": "en",
+      "original_title": "The Dark Knight",
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "popularity": 57.8041,
+      "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "release_date": "2008-07-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.539,
+      "vote_count": 37117
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oV472EbPedkc5QzqolGc7sCgCnn.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1110034,
+      "title": "Kraken",
+      "original_language": "no",
+      "original_title": "Kraken",
+      "overview": "A marine biologist is doing research on a fish farm when she encounters several strange occurrences. Along with the brutal deaths of two teenagers, all signs point to the deep fjord; can there be more to the depths than the eye can see?",
+      "popularity": 59.2197,
+      "poster_path": "/u8x0jvVCEpRyN8q5ORyJZzBZ2Ho.jpg",
+      "release_date": "2026-02-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.162,
+      "vote_count": 376
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/faJB8DXU0LXwq5ebMLj5drz8S4N.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1389172,
+      "title": "Reporting Live",
+      "original_language": "hi",
+      "original_title": "रिपोर्टिंग लाइव",
+      "overview": "A young reporter and her reluctant cameraman chase a story, only to get entangled in an illegal sand-mining racket run by a ruthless syndicate.",
+      "popularity": 53.8032,
+      "poster_path": "/xVabS4lTi6IMscr2FOucxydE6ZD.jpg",
+      "release_date": "2026-10-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/v23fWgJUEt8EMmvn19btIacxP8E.jpg",
+      "genre_ids": [
+        10749,
+        14,
+        16
+      ],
+      "id": 3933,
+      "title": "Corpse Bride",
+      "original_language": "en",
+      "original_title": "Corpse Bride",
+      "overview": "In a 19th-century European village, a young man about to be married is whisked away to the underworld and wed to a mysterious corpse bride, while his real bride waits bereft in the land of the living.",
+      "popularity": 55.1909,
+      "poster_path": "/3RAoVTxUk1OzZClscAsynuu670p.jpg",
+      "release_date": "2005-09-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.597,
+      "vote_count": 10581
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qsxhnirlp7y4Ae9bd11oYJSX59j.jpg",
+      "genre_ids": [
+        10751,
+        16,
+        35,
+        14,
+        12,
+        10402
+      ],
+      "id": 446893,
+      "title": "Trolls World Tour",
+      "original_language": "en",
+      "original_title": "Trolls World Tour",
+      "overview": "Queen Poppy and Branch make a surprising discovery — there are other Troll worlds beyond their own, and their distinct differences create big clashes between these various tribes. When a mysterious threat puts all of the Trolls across the land in danger, Poppy, Branch, and their band of friends must embark on an epic quest to create harmony among the feuding Trolls to unite them against certain doom.",
+      "popularity": 46.3318,
+      "poster_path": "/7W0G3YECgDAfnuiHG91r8WqgIOe.jpg",
+      "release_date": "2020-03-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.224,
+      "vote_count": 2325
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3DV7c9FoogMORFGUFDbTcCtzxOr.jpg",
+      "genre_ids": [
+        27,
+        35,
+        53
+      ],
+      "id": 1477712,
+      "title": "Ice Cream Man",
+      "original_language": "en",
+      "original_title": "Ice Cream Man",
+      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+      "popularity": 54.6454,
+      "poster_path": "/w2dr5aFRtRB1ojcHbCEPlfTXkbf.jpg",
+      "release_date": "2026-08-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.277,
+      "vote_count": 238
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 1170608,
+      "title": "Dune: Part Three",
+      "original_language": "en",
+      "original_title": "Dune: Part Three",
+      "overview": "Nearly two decades after he seized control of the Imperium, Paul Atreides is now a ruthless Emperor, and must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As enemies close in, Paul must confront the true cost of power and the fate of those he loves the most.",
+      "popularity": 54.6298,
+      "poster_path": "/glt0v4I89rMWstDNCaFXc5SNyO1.jpg",
+      "release_date": "2026-12-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        9648,
+        10751
+      ],
+      "id": 1084242,
+      "title": "Zootopia 2",
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 50.8789,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.667,
+      "vote_count": 3628
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/m4TUa2ciEWSlk37rOsjiSIvZDXE.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        14
+      ],
+      "id": 129,
+      "title": "Spirited Away",
+      "original_language": "ja",
+      "original_title": "千と千尋の神隠し",
+      "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+      "popularity": 54.176,
+      "poster_path": "/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+      "release_date": "2001-07-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.537,
+      "vote_count": 19135
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+      "genre_ids": [
+        18,
+        36,
+        10752
+      ],
+      "id": 872585,
+      "title": "Oppenheimer",
+      "original_language": "en",
+      "original_title": "Oppenheimer",
+      "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+      "popularity": 54.2834,
+      "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+      "release_date": "2023-07-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.024,
+      "vote_count": 12786
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/edVRp9npNwQwJtD05KyZlzp1J2p.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 4488,
+      "title": "Friday the 13th",
+      "original_language": "en",
+      "original_title": "Friday the 13th",
+      "overview": "Camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp that was the site of a child's drowning.",
+      "popularity": 53.9711,
+      "poster_path": "/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
+      "release_date": "1980-05-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.405,
+      "vote_count": 3556
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 1281331,
+      "title": "The Social Reckoning",
+      "original_language": "en",
+      "original_title": "The Social Reckoning",
+      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
+      "popularity": 52.2632,
+      "poster_path": "/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
+      "release_date": "2026-10-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.969,
+      "vote_count": 131
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9MdxBPjI58xkzA7RtKX9xRKvlZp.jpg",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "id": 1288069,
+      "title": "Tenzing",
+      "original_language": "en",
+      "original_title": "Tenzing",
+      "overview": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
+      "popularity": 52.3959,
+      "poster_path": "/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+      "release_date": "2026-10-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.3,
+      "vote_count": 209
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg",
+      "genre_ids": [
+        35,
+        18,
+        53
+      ],
+      "id": 1130948,
+      "title": "Rosebush Pruning",
+      "original_language": "en",
+      "original_title": "Rosebush Pruning",
+      "overview": "When an American heir living in a luxurious Spanish villa decides to move in with his girlfriend, his departure triggers a family collapse as his brother uncovers the truth behind their mother's tragic death.",
+      "popularity": 49.4593,
+      "poster_path": "/rsHEVjzxU8cxz1sm3vboj99daNv.jpg",
+      "release_date": "2026-04-23",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 68
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bfh9Z3Ghz4FOJAfLOAhmc3ccnHU.jpg",
+      "genre_ids": [
+        12,
+        14
+      ],
+      "id": 671,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "original_language": "en",
+      "original_title": "Harry Potter and the Philosopher's Stone",
+      "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+      "popularity": 49.8501,
+      "poster_path": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+      "release_date": "2001-11-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.906,
+      "vote_count": 30521
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ejdD20cdHNFAYAN2DlqPToXKyzx.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 238,
+      "title": "The Godfather",
+      "original_language": "en",
+      "original_title": "The Godfather",
+      "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+      "popularity": 50.8297,
+      "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "release_date": "1972-03-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.688,
+      "vote_count": 23867
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lkDYN0whyE82mcM20rwtwjbniKF.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 911430,
+      "title": "F1",
+      "original_language": "en",
+      "original_title": "F1",
+      "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+      "popularity": 48.2614,
+      "poster_path": "/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
+      "release_date": "2025-06-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.832,
+      "vote_count": 4924
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fRjy6zDeNjfzmjpKz8mElA9Aa6l.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1523145,
+      "title": "Your Heart Will Be Broken",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 50.8728,
+      "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.703,
+      "vote_count": 202
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "id": 603,
+      "title": "The Matrix",
+      "original_language": "en",
+      "original_title": "The Matrix",
+      "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+      "popularity": 49.6057,
+      "poster_path": "/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+      "release_date": "1999-03-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.261,
+      "vote_count": 29097
+    }
+  ],
+  "total_pages": 5,
+  "total_results": 20001
+}
