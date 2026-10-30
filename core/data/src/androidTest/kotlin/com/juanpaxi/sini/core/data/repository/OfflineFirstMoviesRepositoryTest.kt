@@ -90,9 +90,9 @@ class OfflineFirstMoviesRepositoryTest {
             assertThat(movies).isNotEmpty()
             assertThat(storedMovies).isAtLeast(20)
             assertThat(remoteKey).isNotNull()
-            val colony = movies.first()
-            assertThat(colony.id).isEqualTo(969681)
-            assertThat(colony.title).isEqualTo("Spider-Man: Brand New Day")
+            val hope = movies.first()
+            assertThat(hope.id).isEqualTo(1058424)
+            assertThat(hope.title).isEqualTo("Hope")
         }
 
     @Test
