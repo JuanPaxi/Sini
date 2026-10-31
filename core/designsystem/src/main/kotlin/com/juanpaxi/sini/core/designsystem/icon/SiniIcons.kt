@@ -18,4 +18,10 @@ object SiniIcons {
     val WifiSlashBorder = R.drawable.wifi_slash_ic
     val CloudWarningBorder = R.drawable.cloud_warning_ic
     val ArrowsClockwiseBorder = R.drawable.arrows_clockwise_ic
+    val ArrowLeftBorder = R.drawable.arrow_left_ic
+    val SpinnerGap = R.drawable.spinner_gap_ic
+    val HeartBorder = R.drawable.heart_ic
+    val Heart = R.drawable.heart_fill_ic
+    val ClockBorder = R.drawable.clock_ic
+    val WarningCircleBorder = R.drawable.warning_circle_ic
 }

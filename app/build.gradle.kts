@@ -75,6 +75,7 @@ dependencies {
     implementation(project(":core:designsystem"))
     implementation(project(":core:navigation"))
     implementation(project(":core:model"))
+    implementation(project(":feature:detail"))
     implementation(project(":feature:home"))
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))

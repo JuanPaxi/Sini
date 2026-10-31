@@ -20,7 +20,10 @@ import com.juanpaxi.sini.core.designsystem.icon.SiniIcons
 import com.juanpaxi.sini.core.designsystem.theme.SiniTheme
 
 @Composable
-fun Loading(modifier: Modifier = Modifier) {
+fun Loading(
+    modifier: Modifier = Modifier,
+    title: String,
+) {
     Box(
         modifier =
             modifier
@@ -39,7 +42,7 @@ fun Loading(modifier: Modifier = Modifier) {
                 modifier = Modifier.size(48.dp),
             )
             Text(
-                text = "Loading Movies ...",
+                text = title,
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.onBackground,
             )
@@ -56,6 +59,8 @@ fun Loading(modifier: Modifier = Modifier) {
 @Composable
 fun LoadingPreview() {
     SiniTheme {
-        Loading()
+        Loading(
+            title = "Loading Movies ...",
+        )
     }
 }

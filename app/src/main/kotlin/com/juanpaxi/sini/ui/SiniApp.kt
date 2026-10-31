@@ -21,11 +21,9 @@ import androidx.navigation3.ui.NavDisplay
 import com.juanpaxi.sini.core.designsystem.component.SiniBackground
 import com.juanpaxi.sini.core.designsystem.component.SiniNavigationBar
 import com.juanpaxi.sini.core.designsystem.component.SiniNavigationBarItem
-import com.juanpaxi.sini.core.designsystem.component.SiniTopAppBar
-import com.juanpaxi.sini.core.designsystem.icon.SiniIcons
 import com.juanpaxi.sini.core.navigation.Navigator
 import com.juanpaxi.sini.core.navigation.toEntries
-import com.juanpaxi.sini.feature.home.navigation.HomeNavKey
+import com.juanpaxi.sini.feature.detail.navigation.detailEntry
 import com.juanpaxi.sini.feature.home.navigation.homeEntry
 import com.juanpaxi.sini.navigation.TOP_LEVEL_NAV_ITEMS
 
@@ -71,22 +69,13 @@ internal fun SiniApp(
             val entryProvider =
                 entryProvider {
                     homeEntry(navigator)
+                    detailEntry(navigator)
                 }
 
             NavDisplay(
                 entries = appState.navigationState.toEntries(entryProvider),
                 onBack = { navigator.goBack() },
             )
-            when (appState.navigationState.currentKey) {
-                HomeNavKey -> {
-                    SiniTopAppBar(
-                        navigationIcon = SiniIcons.Sini,
-                        navigationIconContentDescription = "Sini",
-                        actionIcon = SiniIcons.Notification,
-                        actionIconContentDescription = "Notification",
-                    )
-                }
-            }
         }
     }
 }
