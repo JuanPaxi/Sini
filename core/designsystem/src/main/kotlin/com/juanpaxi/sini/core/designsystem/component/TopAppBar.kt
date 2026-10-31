@@ -22,7 +22,8 @@ import com.juanpaxi.sini.core.designsystem.theme.SiniTheme
 fun SiniTopAppBar(
     modifier: Modifier = Modifier,
     @DrawableRes navigationIcon: Int,
-    actionIcon: Int? = null,
+    @DrawableRes actionIcon: Int? = null,
+    navigationIconTint: Color = Color.Unspecified,
     navigationIconContentDescription: String,
     actionIconContentDescription: String? = null,
     onNavigationClick: () -> Unit = {},
@@ -36,7 +37,7 @@ fun SiniTopAppBar(
                     painter = painterResource(navigationIcon),
                     contentDescription = navigationIconContentDescription,
                     modifier = Modifier.size(28.dp),
-                    tint = Color.Unspecified,
+                    tint = navigationIconTint,
                 )
             }
         },

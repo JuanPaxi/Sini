@@ -16,7 +16,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.juanpaxi.sini.core.designsystem.icon.SiniIcons
 import com.juanpaxi.sini.core.designsystem.theme.SiniTheme
@@ -31,10 +34,8 @@ fun VoteAverageBadge(
         modifier =
             modifier
                 .padding(6.dp)
-                .shadow(
-                    elevation = 4.dp,
-                    shape = CircleShape,
-                ).clip(CircleShape)
+                .shadow(4.dp, CircleShape)
+                .clip(CircleShape)
                 .background(
                     brush =
                         Brush.horizontalGradient(
@@ -49,6 +50,20 @@ fun VoteAverageBadge(
                     color = MaterialTheme.colorScheme.outline.copy(alpha = 0.7f),
                     shape = CircleShape,
                 ).padding(horizontal = 6.dp, vertical = 4.dp),
+    ) {
+        VoteAverage(voteAverage = voteAverage)
+    }
+}
+
+@Composable
+fun VoteAverage(
+    voteAverage: Double,
+    modifier: Modifier = Modifier,
+    iconSize: Dp = 14.dp,
+    textStyle: TextStyle = MaterialTheme.typography.labelMedium,
+) {
+    Row(
+        modifier = modifier,
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(5.dp),
     ) {
@@ -56,17 +71,13 @@ fun VoteAverageBadge(
             painter = painterResource(SiniIcons.Star),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.primaryContainer,
-            modifier = Modifier.size(14.dp),
+            modifier = Modifier.size(iconSize),
         )
+
         Text(
-            text =
-                String.format(
-                    Locale.US,
-                    "%.1f",
-                    voteAverage,
-                ),
-            color = MaterialTheme.colorScheme.onSurface,
-            style = MaterialTheme.typography.labelMedium,
+            text = String.format(Locale.US, "%.1f", voteAverage),
+            color = Color.White.copy(alpha = 0.78f),
+            style = textStyle,
         )
     }
 }

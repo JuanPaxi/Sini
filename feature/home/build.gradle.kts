@@ -61,6 +61,7 @@ dependencies {
     implementation(project(":core:designsystem"))
     implementation(project(":core:model"))
     implementation(project(":core:navigation"))
+    implementation(project(":feature:detail"))
     implementation(libs.bundles.compose.ui)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.paging.compose)

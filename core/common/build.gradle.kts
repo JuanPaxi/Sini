@@ -40,6 +40,7 @@ spotless {
 }
 
 dependencies {
+    api(libs.kotlinx.datetime)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 }

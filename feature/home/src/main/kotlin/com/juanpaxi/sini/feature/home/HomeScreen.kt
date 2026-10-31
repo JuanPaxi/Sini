@@ -26,7 +26,10 @@ import com.juanpaxi.sini.core.designsystem.component.MovieCardPlaceholder
 import com.juanpaxi.sini.core.designsystem.component.RefreshError
 
 @Composable
-fun HomeScreen(viewModel: HomeViewModel = hiltViewModel()) {
+fun HomeScreen(
+    viewModel: HomeViewModel = hiltViewModel(),
+    onMovieDetailClick: (Int) -> Unit,
+) {
     val movies = viewModel.popularMovies.collectAsLazyPagingItems()
     val isOnline by viewModel.isOnline.collectAsState(initial = false)
     val gridState = rememberLazyGridState()
@@ -55,13 +58,11 @@ fun HomeScreen(viewModel: HomeViewModel = hiltViewModel()) {
 
     when {
         isInitialLoading -> {
-            Loading()
+            Loading(title = "Loading Movies ...")
         }
 
         isInitialError -> {
-            InitialError(
-                retry = movies::retry,
-            )
+            InitialError(retry = movies::retry)
         }
 
         else -> {
@@ -93,7 +94,9 @@ fun HomeScreen(viewModel: HomeViewModel = hiltViewModel()) {
                     if (movie != null) {
                         MovieCard(
                             movie = movie,
-                            onMovieDetailClick = { },
+                            onMovieDetailClick = {
+                                onMovieDetailClick(movie.id)
+                            },
                         )
                     } else {
                         MovieCardPlaceholder()
