@@ -3,7 +3,6 @@ package com.juanpaxi.sini.core.designsystem.icon
 import com.juanpaxi.sini.core.designsystem.R
 
 object SiniIcons {
-    val Sini = R.drawable.sini_ic
     val Notification = R.drawable.bell_ic
     val Home = R.drawable.house_fill_ic
     val HomeBorder = R.drawable.house_ic

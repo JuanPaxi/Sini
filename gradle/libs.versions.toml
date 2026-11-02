@@ -4,6 +4,7 @@ minSdk = "28"
 targetSdk = "36"
 activityCompose = "1.13.0"
 agp = "9.2.1"
+androidxCoreSplashscreen = "1.2.0"
 androidxHiltLifecycleViewModelCompose = "1.4.0"
 androidxNavigation3 = "1.2.0"
 androidxTestCore = "1.7.0"
@@ -37,6 +38,7 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
 androidx-datastore = { group = "androidx.datastore", name = "datastore", version.ref = "dataStore" }
 androidx-hilt-lifecycle-viewModelCompose = { group = "androidx.hilt", name = "hilt-lifecycle-viewmodel-compose", version.ref = "androidxHiltLifecycleViewModelCompose" }
 androidx-lifecycle-viewmodel-navigation3 = { group = "androidx.lifecycle", name="lifecycle-viewmodel-navigation3", version.ref = "lifecycleViewmodelNav3" }
