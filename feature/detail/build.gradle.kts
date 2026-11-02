@@ -60,7 +60,6 @@ dependencies {
     implementation(project(":core:navigation"))
     implementation(libs.bundles.compose.ui)
     implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.paging.compose)
     implementation(libs.androidx.hilt.lifecycle.viewModelCompose)
     implementation(libs.kotlinx.datetime)
     implementation(libs.hilt.android)

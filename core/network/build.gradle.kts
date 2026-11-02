@@ -55,6 +55,9 @@ spotless {
         target("**/*.gradle.kts")
         ktlint()
     }
+    format("xml") {
+        target("src/**/*.xml")
+    }
 }
 
 dependencies {
