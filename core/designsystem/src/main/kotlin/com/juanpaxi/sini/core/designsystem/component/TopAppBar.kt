@@ -67,7 +67,7 @@ fun SiniTopAppBar(
 private fun SiniTopAppBarPreview() {
     SiniTheme {
         SiniTopAppBar(
-            navigationIcon = SiniIcons.Sini,
+            navigationIcon = SiniIcons.ArrowLeftBorder,
             actionIcon = SiniIcons.Notification,
             navigationIconContentDescription = "Back",
             actionIconContentDescription = null,
