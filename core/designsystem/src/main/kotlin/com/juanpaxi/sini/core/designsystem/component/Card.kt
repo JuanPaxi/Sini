@@ -26,12 +26,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.juanpaxi.sini.core.designsystem.theme.SiniTheme
-import com.juanpaxi.sini.core.model.data.Movie
 
 @Composable
 fun MovieCard(
     modifier: Modifier = Modifier,
-    movie: Movie,
+    movieId: Int,
+    title: String,
+    posterPath: String?,
+    voteAverage: Double,
     onMovieDetailClick: (Int) -> Unit,
 ) {
     Box(
@@ -42,7 +44,7 @@ fun MovieCard(
                 .clip(RoundedCornerShape(12.dp))
                 .background(MaterialTheme.colorScheme.surfaceVariant)
                 .clickable {
-                    onMovieDetailClick(movie.id)
+                    onMovieDetailClick(movieId)
                 }.border(
                     width = 1.dp,
                     color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.6f),
@@ -50,9 +52,9 @@ fun MovieCard(
                 ),
     ) {
         MovieImage(
-            imagePath = movie.posterPath,
+            imagePath = posterPath,
             modifier = Modifier.fillMaxSize(),
-            contentDescription = movie.title,
+            contentDescription = title,
             shape = RoundedCornerShape(12.dp),
         )
         Box(
@@ -73,7 +75,7 @@ fun MovieCard(
         )
         VoteAverageBadge(
             modifier = Modifier.align(Alignment.TopEnd),
-            voteAverage = movie.voteAverage,
+            voteAverage = voteAverage,
         )
         Column(
             modifier =
@@ -87,7 +89,7 @@ fun MovieCard(
             verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
             Text(
-                text = movie.title,
+                text = title,
                 color = Color.White.copy(alpha = 0.78f),
                 style = MaterialTheme.typography.titleSmall,
                 fontWeight = FontWeight.SemiBold,
@@ -101,20 +103,16 @@ fun MovieCard(
 @ThemePreviews
 @Composable
 fun MovieCardPreview() {
-    val movie =
-        Movie(
-            id = 123,
-            title = "Resident Evil: Welcome to Raccoon City",
-            posterPath = "",
-            voteAverage = 7.98,
-        )
     SiniTheme {
         MovieCard(
             modifier =
                 Modifier
                     .height(270.dp)
                     .width(180.dp),
-            movie = movie,
+            movieId = 123,
+            title = "Resident Evil: Welcome to Raccoon City",
+            posterPath = "",
+            voteAverage = 7.98,
             onMovieDetailClick = {},
         )
     }

@@ -24,4 +24,16 @@ object SiniIcons {
     val Heart = R.drawable.heart_fill_ic
     val ClockBorder = R.drawable.clock_ic
     val WarningCircleBorder = R.drawable.warning_circle_ic
+    val TranslateBorder = R.drawable.translate_ic
+    val CaretRightBorder = R.drawable.caret_right_ic
+    val DesktopBorder = R.drawable.desktop_ic
+    val Desktop = R.drawable.desktop_fill_ic
+    val MoonBorder = R.drawable.moon_ic
+    val Moon = R.drawable.moon_fill_ic
+    val SunBorder = R.drawable.sun_ic
+    val Sun = R.drawable.sun_fill_ic
+    val GithubBorder = R.drawable.github_ic
+    val PaperPlaneBorder = R.drawable.paper_plane_tilt_ic
+    val TmdbLogo = R.drawable.tmdb_logo
+    val BookMarkBorder = R.drawable.bookmark_ic
 }

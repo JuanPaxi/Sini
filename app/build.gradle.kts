@@ -77,6 +77,8 @@ dependencies {
     implementation(project(":core:model"))
     implementation(project(":feature:detail"))
     implementation(project(":feature:home"))
+    implementation(project(":feature:profile"))
+    implementation(project(":feature:bookmark"))
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.bundles.compose.ui)

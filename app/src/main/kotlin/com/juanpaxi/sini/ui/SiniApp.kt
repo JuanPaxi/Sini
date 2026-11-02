@@ -23,8 +23,10 @@ import com.juanpaxi.sini.core.designsystem.component.SiniNavigationBar
 import com.juanpaxi.sini.core.designsystem.component.SiniNavigationBarItem
 import com.juanpaxi.sini.core.navigation.Navigator
 import com.juanpaxi.sini.core.navigation.toEntries
+import com.juanpaxi.sini.feature.bookmark.navigation.bookmarkEntry
 import com.juanpaxi.sini.feature.detail.navigation.detailEntry
 import com.juanpaxi.sini.feature.home.navigation.homeEntry
+import com.juanpaxi.sini.feature.profile.navigation.profileEntry
 import com.juanpaxi.sini.navigation.TOP_LEVEL_NAV_ITEMS
 
 @Composable
@@ -68,8 +70,10 @@ internal fun SiniApp(
         ) {
             val entryProvider =
                 entryProvider {
-                    homeEntry(navigator)
+                    bookmarkEntry(navigator)
                     detailEntry(navigator)
+                    homeEntry(navigator)
+                    profileEntry(navigator)
                 }
 
             NavDisplay(

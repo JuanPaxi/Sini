@@ -93,10 +93,11 @@ fun HomeScreen(
                     val movie = movies[index]
                     if (movie != null) {
                         MovieCard(
-                            movie = movie,
-                            onMovieDetailClick = {
-                                onMovieDetailClick(movie.id)
-                            },
+                            movieId = movie.id,
+                            title = movie.title,
+                            posterPath = movie.posterPath,
+                            voteAverage = movie.voteAverage,
+                            onMovieDetailClick = onMovieDetailClick,
                         )
                     } else {
                         MovieCardPlaceholder()
